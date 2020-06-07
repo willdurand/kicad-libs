@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GB_GBC_1x32
+D 32 Pin card slot connector for GameBoy/GameBoy Color
+F https://www.aliexpress.com/item/32832493101.html
+$ENDCMP
+#
+#End Doc Library
