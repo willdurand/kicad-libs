@@ -10,13 +10,16 @@
 ## Usage
 
 This repository contains several libraries. Each library provides several
-symbols along with their footprints. Some symbols have 3D shapes too!
+symbols along with their footprints. Some symbols have 3D shapes too! 3D shapes
+have been created with [OpenSCAD](https://www.openscad.org/) and transformed
+into `.step` files using [FreeCAD](https://www.freecadweb.org/) (_via_ `.csg`
+files).
 
 ### willdurand_connector
 
-| Symbol      | Description                                                                                         | 3D shape? |
-| ----------- | --------------------------------------------------------------------------------------------------- | --------- |
-| GB_GBC_1x32 | Card slot connector for GameBoy from [AliExpress](https://www.aliexpress.com/item/32832493101.html) | Yes       |
+| Symbol      | Description                                                                                                     | 3D Shape?                                                            |
+| ----------- | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| GB_GBC_1x32 | 32 Pin card slot connector for GameBoy/GameBoy Color ([link](https://www.aliexpress.com/item/32832493101.html)) | ![Preview of GB_GBC_1x32](docs/willdurand_connector_GB_GBC_1x32.png) |
 
 ## License
 
