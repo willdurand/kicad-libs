@@ -1,4 +1,4 @@
-(module GB_GBC_1x32 (layer F.Cu) (tedit 5EDD3457)
+(module GB_GBC_1x32 (layer F.Cu) (tedit 5EDD6148)
   (descr "32 Pin card slot connector for GameBoy/GameBoy Color")
   (attr smd)
   (fp_text reference REF** (at 0 -10) (layer F.SilkS)
@@ -67,4 +67,9 @@
   (pad 2 smd rect (at -20.83 10) (size 1 2) (layers F.Cu F.Paste F.Mask))
   (pad 1 smd rect (at -22.3 10) (size 1 2) (layers F.Cu F.Paste F.Mask))
   (pad "" np_thru_hole circle (at -12 2.5) (size 2 2) (drill 2) (layers *.Cu *.Mask))
+  (model willdurand_connector.3dshapes/GB_GBC_1x32.step
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
