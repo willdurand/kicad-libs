@@ -18,8 +18,21 @@ module pins() {
 }
 
 module attachPin() {
-  color(pinColor)
-    cube([4, 3, 0.2]);
+  difference() {
+    translate([0, -2, 0])
+      color(pinColor)
+      cube([4, 5, 0.2]);
+
+    translate([0, -2, -0.5])
+      cube([1, 2, 1]);
+
+    translate([3, -2, -0.5])
+      cube([1, 2, 1]);
+
+    translate([0.75, 1.25, -0.1])
+      color(pinColor)
+      cube([2.5, 1, 0.4]);
+  }
 }
 
 module cartridgePin() {
@@ -36,6 +49,15 @@ module cartridgePins() {
   }
 }
 
+module notch() {
+  color(plasticColor)
+    cube([8, 1, 3]);
+
+  translate([3, -2, 0.5])
+    color(plasticColor)
+    cube([2, 2, 1]);
+}
+
 module connector() {
   difference() {
     difference() {
@@ -46,6 +68,16 @@ module connector() {
       translate([5, -1, -1])
         color(plasticColor)
         cube([47, 2, 6]);
+
+      // Left hole on the back.
+      translate([1.5, -1, 1])
+        color(plasticColor)
+        cube([2, 5, 4.5]);
+
+      // Right hole on the back.
+      translate([53.5, -1, 1])
+        color(plasticColor)
+        cube([2, 5, 4.5]);
 
       translate([-0.5, 17.8, 0.2])
         rotate([45, 0, 0])
@@ -103,13 +135,11 @@ module connector() {
 
     // Left notch
     translate([12, 17, -1])
-      color(plasticColor)
-      cube([8, 18, 3]);
+      notch();
 
     // Right notch
     translate([37, 17, -1])
-      color(plasticColor)
-      cube([8, 18, 3]);
+      notch();
   }
 
   translate([6, 0, 0]) {
