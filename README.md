@@ -17,13 +17,13 @@ files).
 
 ### willdurand_connector
 
-| Symbol      | Description                                                                                                     | 3D Shape?                                                            |
+| Symbol      | Description                                                                                                     | 3D Shape                                                             |
 | ----------- | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | GB_GBC_1x32 | 32 Pin card slot connector for GameBoy/GameBoy Color ([link](https://www.aliexpress.com/item/32832493101.html)) | ![Preview of GB_GBC_1x32](docs/willdurand_connector_GB_GBC_1x32.png) |
 
 #### Footprints (without symbols)
 
-| Name               |                                                                                            | 3D Shape                                                                           |
+| Name               | Description                                                                                | 3D Shape                                                                           |
 | ------------------ | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
 | LongPinSocket_1x14 | 14 pins socket with long pins based on KiCad's 1x14 pin socket footprint                   | ![Preview of LongPinSocket_1x14](docs/willdurand_connector_LongPinSocket_1x14.png) |
 | HC49US             | Crystal Oscillator HC-49S 16MHz ([link](https://www.aliexpress.com/item/32452467829.html)) | ![Preview of HC49US](docs/willdurand_crystal_HC49US.png)                           |

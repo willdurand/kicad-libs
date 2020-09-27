@@ -34,8 +34,8 @@ if __name__ == '__main__':
         section_name = section['name']
 
         print(f"### {section_name}\n")
-        print('| Symbol | Description | 3D Shape? |')
-        print('| ------ | ----------- | --------- |')
+        print('| Symbol | Description | 3D Shape |')
+        print('| ------ | ----------- | -------- |')
 
         for symbol in section['symbols']:
             name = symbol['name']
