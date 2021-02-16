@@ -1,19 +1,20 @@
+pinWidth = 0.79;
 pinColor = "lightgrey";
 plasticColor = [72/255, 72/255, 72/255];
 
 module pin() {
   rotate(a=[0, 0, 180]) {
     color(pinColor)
-      cube([0.5, 3, 0.2]);
+      cube([pinWidth, 3, 0.2]);
     color(pinColor)
-      cube([0.5, 0.2, 5]);
+      cube([pinWidth, 0.2, 5]);
   }
 }
 
 // Soldering pins
 module pins() {
   for (_i = [0:31]) {
-    translate([1.47 * _i, 1, 0]) pin();
+    translate([(0.7 + pinWidth) * _i, 1, 0]) pin();
   }
 }
 
@@ -23,10 +24,10 @@ module attachPin() {
       color(pinColor)
       cube([4, 5, 0.2]);
 
-    translate([0, -2, -0.5])
+    translate([0, -2, -1])
       cube([1, 2, 1]);
 
-    translate([3, -2, -0.5])
+    translate([3, -2, -1])
       cube([1, 2, 1]);
 
     translate([0.75, 1.25, -0.1])
@@ -67,7 +68,7 @@ module connector() {
       // For the soldering pins.
       translate([5, -1, -1])
         color(plasticColor)
-        cube([47, 2, 6]);
+        cube([47.4, 1.5, 6]);
 
       // Left hole on the back.
       translate([1.5, -1, 1])
@@ -134,23 +135,23 @@ module connector() {
       cube([55, 3.1, 3]);
 
     // Left notch
-    translate([12, 17, -1])
+    translate([11.6, 17, -1])
       notch();
 
     // Right notch
-    translate([37, 17, -1])
+    translate([37.4, 17, -1])
       notch();
   }
 
-  translate([6, 0, 0]) {
+  translate([6, -0.5, 0]) {
     pins();
   }
 
-  translate([14, 17, 0]) {
+  translate([11.6 + 2, 17, 0]) {
     attachPin();
   }
 
-  translate([39, 17, 0]) {
+  translate([37.4 + 2, 17, 0]) {
     attachPin();
   }
 
@@ -158,14 +159,14 @@ module connector() {
     cartridgePins();
   }
 
-  translate([16, 6.5, -1]) {
+  translate([15.5, 6.5, -4]) {
     color(plasticColor)
-      cylinder(1, 1);
+      cylinder(4, 1);
   }
 
-  translate([41, 6.5, -1]) {
+  translate([41.5, 6.5, -4]) {
     color(plasticColor)
-      cylinder(1, 1);
+      cylinder(4, 1);
   }
 }
 

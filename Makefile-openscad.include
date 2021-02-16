@@ -1,0 +1,8 @@
+OPENSCAD ?= openscad
+
+include $(wildcard *.deps)
+
+all: $(TARGET)
+
+%.csg: %.scad
+	$(OPENSCAD) -m make -o $@ -d $@.deps $<
