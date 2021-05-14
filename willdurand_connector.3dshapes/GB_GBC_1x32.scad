@@ -159,14 +159,14 @@ module connector() {
     cartridgePins();
   }
 
-  translate([15.5, 6.5, -4]) {
+  translate([15.5, 6.5, -1]) {
     color(plasticColor)
-      cylinder(4, 1);
+      cylinder(1, 1);
   }
 
-  translate([41.5, 6.5, -4]) {
+  translate([41.5, 6.5, -1]) {
     color(plasticColor)
-      cylinder(4, 1);
+      cylinder(1, 1);
   }
 }
 
