@@ -3,7 +3,7 @@
 ## Installation
 
 1. Get a local copy of this repository (_e.g._, `/path/to/kicad_libs/willdurand-kicad-libs`)
-2. Import the `*.lib` files as Global or Project Symbol Libraries in _Eeschema_
+2. Import the `*.kicad_sym` files as Global or Project Symbol Libraries in _Eeschema_
 3. Import the `*.pretty` files as Global or Project Footprint Libraries in _Pcbnew_
 4. Configure a new 3d shape alias named `willdurand-kicad-libs` that points to `/path/to/kicad_libs/willdurand-kicad-libs` in _Pcbnew_
 
